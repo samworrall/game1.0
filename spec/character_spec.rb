@@ -8,4 +8,10 @@ describe Character do
       expect(character.name).to eq('Malfurion Stormrage')
     end
   end
+
+  describe '#health' do
+    it 'Returns the health of the character' do
+      expect(character.health).to eq 10
+    end
+  end
 end
