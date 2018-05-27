@@ -32,4 +32,26 @@ describe Character do
       expect(character.available_skillpoints).to eq 10
     end
   end
+
+  describe '#assign_skillpoints' do
+    it 'Reduces the amount of available skillpoints' do
+      character.assign_skillpoints_to_health(1)
+      expect(character.available_skillpoints).to eq 9
+    end
+
+    it 'Increases the health attribute by the specified number' do
+      character.assign_skillpoints_to_health(1)
+      expect(character.health).to eq 31
+    end
+
+    it 'Increases the attack attribute by the specified number' do
+      character.assign_skillpoints_to_attack(1)
+      expect(character.attack).to eq 1
+    end
+
+    it 'Increases the evasion attribute by the specified number' do
+      character.assign_skillpoints_to_evasion(1)
+      expect(character.evasion).to eq 1
+    end
+  end
 end
