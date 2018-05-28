@@ -1,3 +1,7 @@
+#Game1.0
+
+This is a repository for playing around with game mechanics ideas in Ruby.
+
 User Stories:
 -------------
 ```
